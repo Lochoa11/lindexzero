@@ -26,17 +26,16 @@ body{
 #Bio{
 	background-color: black;
 	opacity: 0.75;
+	
 	width: 100%;
+	height: 200Px;
 }
 
 #Bio-inside{
 	width: 300px;
 	text-align: center;
-	opacity: 0.75;	
-}
-
-#sdPlayer{
-	margin-bottom: 0px;
+	
+	position: relative;
 }
 
 #name-box{
