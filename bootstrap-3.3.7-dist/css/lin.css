@@ -38,3 +38,15 @@ body{
 #sdPlayer{
 	margin-bottom: 0px;
 }
+
+#name-box{
+		margin: 0 auto;
+		align-content: center;
+		align-self: center;
+		text-align: center;
+		width: 100%;
+}
+
+#name{
+	width: 100%;
+}
