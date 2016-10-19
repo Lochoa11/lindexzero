@@ -1,4 +1,40 @@
+body,
+html{
+	/*min-height: 100%;*/
+	/*max-height: 100%;*/
+	/*min-width: 100%;*/
+	/*max-width: 100%;*/
+}
 body{
-	background-color: black;
+	background-image: url("../../images/Background Images/twilight_NYC.jpg");
+	background-color: black; 
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	color: white;
 }
 
+#myHeader{
+	margin-top: 50px;
+}
+
+#mainPic{
+	margin: 0 auto;
+    padding:0px;
+}
+
+#Bio{
+	background-color: black;
+	opacity: 0.75;
+	width: 100%;
+}
+
+#Bio-inside{
+	width: 300px;
+	text-align: center;
+	opacity: 0.75;	
+}
+
+#sdPlayer{
+	margin-bottom: 0px;
+}
