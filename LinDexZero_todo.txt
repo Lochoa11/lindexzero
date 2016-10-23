@@ -1,0 +1,13 @@
+music player
+	- display where the song is in the title area by filling with white space
+	- make step backward button restart the song
+	- make player able to choose where in song to play from
+	- universal volume control
+	
+
+social media
+
+contact
+
+request colaboration
+

@@ -57,6 +57,12 @@ body{
 	outline: none;
 }
 
+#song-box-startover{
+	background: rgba(192, 192, 192, 0.85);
+	height: 80px;
+	width: 15%;
+	outline: none;
+}
 
 #song-box-wrapper{
 	/*background: rgba(192, 192, 192, 0.5);*/
@@ -68,7 +74,7 @@ body{
 #song-box-header{
 	background: rgba(192, 192, 192, 0.75);
 	height: 80px;
-	width: 85%;
+	width: 70%;
 	outline: none;
 }
 
