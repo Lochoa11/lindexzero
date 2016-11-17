@@ -27,8 +27,8 @@ function printDictionary(){
 
 
 function playSong(songTitle){
-	timeStampTwo = event.timeStamp;
-	savePreviousSongInfo(currentTitle);
+	// timeStampTwo = event.timeStamp;//for saving position in song
+	// savePreviousSongInfo(currentTitle);//for saving position in song
 	var element = document.querySelector('[aria-label='+songTitle+']');
 	// get HTML element
 	var attributeValue = element.getAttribute("class"); 
