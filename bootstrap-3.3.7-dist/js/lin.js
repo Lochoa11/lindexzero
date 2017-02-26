@@ -26,41 +26,60 @@ function printDictionary(){
 }
 
 
+// function playSong(songTitle){
+// 	// timeStampTwo = event.timeStamp;
+// 	var element = document.querySelector('[aria-label='+songTitle+']');
+// 	// get HTML element
+// 	var attributeValue = element.getAttribute("class"); 
+// 	// get value of class attribute
+// 	if(currentlyPlayingAudio.paused != true){
+// 		resetButton();
+// 	}
+// 	currentTitle = songTitle;
+// 	var audio = new Audio('music/'+songTitle+'.m4a');
+// 	currentlyPlayingAudio.pause();
+// 	timeStampOne = event.timeStamp;
+// 	if(attributeValue === "glyphicon glyphicon-play"){
+// 		element.setAttribute("class", "glyphicon glyphicon-pause");
+// 		if(songTitle in arrayOfSongsToTimeStamp){
+// 			audio.currentTime = arrayOfSongsToTimeStamp[songTitle];
+// 			audio.play();
+// 			currentlyPlayingAudio = audio;
+// 			// return;
+// 			console.log("Hello");
+// 		}
+// 		else{
+// 			audio.play();
+// 			currentlyPlayingAudio = audio;
+// 		}
+// 	}
+// 	else{
+// 		audio.pause();
+// 		element.setAttribute("class", "glyphicon glyphicon-play");
+// 	}
+// }
+
 function playSong(songTitle){
-	// timeStampTwo = event.timeStamp;//for saving position in song
-	// savePreviousSongInfo(currentTitle);//for saving position in song
-	var element = document.querySelector('[aria-label='+songTitle+']');
-	// get HTML element
-	var attributeValue = element.getAttribute("class"); 
-	// get value of class attribute
-	if(currentlyPlayingAudio.paused != true){
-		resetButton();
-	}
-	currentTitle = songTitle;
-	var audio = new Audio('music/'+songTitle+'.m4a');
-	currentlyPlayingAudio.pause();
-	timeStampOne = event.timeStamp;
-	if(attributeValue === "glyphicon glyphicon-play"){
-		element.setAttribute("class", "glyphicon glyphicon-pause");
-		if(songTitle in arrayOfSongsToTimeStamp){
-			audio.currentTime = arrayOfSongsToTimeStamp[songTitle];
-			audio.play();
-			currentlyPlayingAudio = audio;
-			// return;
-			console.log("Hello");
-		}
-		else{
-			audio.play();
-			currentlyPlayingAudio = audio;
-		}
-	}
-	else{
+	//song object
+	var audio = new Audio('music/'+ songTitle +'.m4a');
+	//HTML element object
+	var element = document.querySelector('[aria-label='+ songTitle + ']');
+	//get value of class attribute
+	var attributeValue = element.getAttribute("class");
+
+	if (attributeValue === 'glyphicon glyphicon-play') {
+		audio.play();
+		attributeValue.setAttribute("class", "glyphicon glyphicon-pause");
+	}else{
 		audio.pause();
-		element.setAttribute("class", "glyphicon glyphicon-play");
 	}
+		
 
 }
 
-$('#song-box-header').click(function(e){
-	alert(e.pageX);
-})
+
+
+//this alerts you where in the xdirection you are clicking
+// $('#song-box-header').click(function(e){
+// 	alert(e.pageX);
+// })

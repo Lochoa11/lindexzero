@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable =no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>LinDexZero</title>
 
@@ -45,7 +45,7 @@
 		</div>
 
 		<div class="container" id="music">
-
+			<!-- song 1 -->
 			<div class="btn-group" class="button-block" role="group" id="song-box-wrapper" aria-label="...">
 			  <button type="button" class="btn btn-default" id="song-box-header">
 				  <p>Next To Me</p>
@@ -53,22 +53,33 @@
 			  <button type="button" class="btn btn-default" id="song-box-startover"><i class="glyphicon glyphicon-step-backward"></i></button>
 			  <button type="button" class="btn btn-default" id="song-box-player" onclick="playSong('nextToMe')"><i class="glyphicon glyphicon-play" aria-label="nextToMe"></i></button>	
 			</div>
+			<!-- song 2 -->
 			<div class="btn-group" class="button-block" role="group" id="song-box-wrapper" aria-label="...">
 			  <button type="button" class="btn btn-default" id="song-box-header">
 				  <p>Pulse</p>
 			  </button>
 			  <button type="button" class="btn btn-default" id="song-box-startover"><i class="glyphicon glyphicon-step-backward"></i></button>
 			  <button type="button" class="btn btn-default" id="song-box-player" onclick="playSong('pulse')"><i class="glyphicon glyphicon-play" aria-label="pulse"></i></button>	
-			</div>
-			<div class="btn-group" class="button-block" role="group" id="song-box-wrapper" aria-label="...">
-			  <button type="button" class="btn btn-default" id="song-box-header">
-				  <p>Wickawom</p>
-			  </button>
-			  <button type="button" class="btn btn-default" id="song-box-startover"><i class="glyphicon glyphicon-step-backward"></i></button>
-			  <button type="button" class="btn btn-default" id="song-box-player" onclick="playSong('wickawom')"><i class="glyphicon glyphicon-play" aria-label="wickawom"></i></button>	
-			</div>
+			</div> 
+			
 
-
+			<div class="navbar navbar-fixed-bottom">
+				<div class="myPlayer">
+					<div class="songProgress">
+						<input type="range" value="0" min="0" max="100" step="1" name="">
+					</div>
+					<div class="songInformation">
+						<a class="placementText">placement Text</a>
+					</div>
+					<div class=" myButtons col-xs-6">
+						<button type="button" class="btn "><i class="stepBack glyphicon glyphicon-step-backward"></i></button>
+						<button type="button" class="btn "><i class="play glyphicon glyphicon-play"></i></button>
+					</div>
+					<div class="col-xs-6">
+						
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
