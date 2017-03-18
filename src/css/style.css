@@ -1,0 +1,145 @@
+body{
+	background-image: url("../../assets/images/Background Images/twilight_NYC.jpg");
+	background-color: black;
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	color: white;
+}
+
+
+#myHeader{
+	margin-top: 80px;
+}
+/*puts space between the main pic and the top of the screen*/
+
+#mainPic{
+	margin: 0 auto;
+}
+/*puts main pic in the center*/
+
+
+#Bio{
+	margin-top: 20px;
+	/*leaves room between main pic and bio section*/
+	background: rgba(0, 0, 0, 0.5);
+	/*makes background of bio section see through*/
+	width: 100%;
+	/*makes bio section wide as the screen*/
+	height: 100%;
+	/*fills bio and music area background to the bottom*/
+	padding-bottom: 100%;
+}
+
+#Bio-ontop{
+	width: 300px;
+	text-align: center;
+	position: relative;
+	height: 100%;
+}
+/**/
+
+#name-box{
+	margin: 0 auto;
+	align-content: center;
+	align-self: center;
+	text-align: center;
+	width: 100%;
+}
+
+#name{
+	width: 100%;
+}
+
+/*#song-box-player{
+	background: rgba(192, 192, 192, 0.85);
+	height: 80px;
+	width: 15%;
+	outline: none;
+}*/
+
+/*#song-box-startover{
+	background: rgba(192, 192, 192, 0.85);
+	height: 80px;
+	width: 15%;
+	outline: none;
+}*/
+
+#song-box-wrapper{
+	background: rgba(192, 192, 192, .85);
+	height: 80px;
+	margin-top: 10px;
+	width: 100%;
+	border-radius: 10px;
+
+}
+
+#song-box-header{
+	background: rgba(192, 192, 192, 0.75);
+	height: 80px;
+	width: 70%;
+	outline: none;
+}
+
+#space-title{
+	width: 100%;
+}
+#song-info{
+	float:left;
+	background-color: #145000;
+	/*green*/
+	text-align: center;
+	border-radius: 10px 0px 0px 10px
+	height: 100%;
+}
+#controls{
+	float: right;
+	height: inherit;
+}
+
+.myPlayer{
+	background: rgba(192, 192, 192, 1);
+	height: 100px;
+	width: 100%;
+	outline: none;
+/*	border-radius: 20px;*/
+}
+/*#testing {
+	background-color: #145000;
+ }*/
+
+ .songInformation{
+ 	height: 25px;
+ 	/*background-color: red;*/
+ 	text-align: center;
+ }
+ .songProgress{
+ 	height: 25px;
+ 	color: blue;
+ 	text-align: center;
+
+ }
+ .btn-xs{
+ 	width: 100%;
+ 	height: 50px;
+ }
+ .myButtons {
+ 	width: 100%;
+ 	background-color: #4d4d4d;
+ 	text-align: center;
+ }
+ .stepBack{
+ 	padding-right: 60px;
+ 	padding-left: 60px;
+ }
+ .play{
+  	padding-right: 60px;
+ 	padding-left: 60px;
+ }
+ .btn{
+ 	background-color: #737373;
+ }
+
+.songProgress {
+	width: 100%;
+}
