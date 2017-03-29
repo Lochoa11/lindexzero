@@ -1,5 +1,5 @@
 # lindexzero
 
-To see this page copy and past following link into browser 
+To see this page go to following link 
 
 https://lochoa11.github.io/lindexzero/
