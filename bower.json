@@ -1,0 +1,21 @@
+{
+  "name": "lindexzero",
+  "description": "My awesome blog",
+  "main": "",
+  "authors": [
+    "Lin Ochoa"
+  ],
+  "license": "None - Private Work",
+  "homepage": "https://github.com/Lochoa11/lindexzero",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
