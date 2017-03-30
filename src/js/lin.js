@@ -4,6 +4,7 @@ var currentAudio = new Audio();
 var audioPlayer = document.getElementById('musicPlayer');
 
 
+
 var currentElement;
 
 function resetButton(){
@@ -12,11 +13,11 @@ function resetButton(){
 }
 //resets last players button back to normal
 
-function savePreviousSongInfo(currentTitle){
-	arrayOfSongsToTimeStamp[currentTitle] = timeStampTwo - timeStampOne;
-	console.log(currentTitle + " is the currently at " + arrayOfSongsToTimeStamp[currentTitle]);
-	printDictionary();
-}
+// function savePreviousSongInfo(currentTitle){
+// 	arrayOfSongsToTimeStamp[currentTitle] = timeStampTwo - timeStampOne;
+// 	console.log(currentTitle + " is the currently at " + arrayOfSongsToTimeStamp[currentTitle]);
+// 	printDictionary();
+// }
 
 function printDictionary(){
 	for(var key in arrayOfSongsToTimeStamp){
@@ -29,16 +30,17 @@ function printDictionary(){
 
 function playSong(songTitle){
 
-
+	var playButton = document.getElementById('playButton');
+	
 	//song object
 	var audioSource = "assets/music/" + songTitle + ".m4a";
-	var currentSong = document.getElementsByClassName('placementText')[0];
+	// var currentSong = document.getElementsByClassName('placementText')[0];
 
 	//HTML element object
-	var element = document.querySelector("[aria-label="+ songTitle + "]");
+	// var element = document.querySelector("[aria-label="+ songTitle + "]");
 	//get value of class attribute
 
-	if (element.getAttribute("class") === "glyphicon glyphicon-play") {
+	if (playButton.getAttribute("class") === "glyphicon glyphicon-play") {
 		audioPlayer.setAttribute('src', audioSource);
 		audioPlayer.load();
 
@@ -46,12 +48,12 @@ function playSong(songTitle){
 
 		audioPlayer.onloadedmetadata = function() {
 			audioPlayer.play();
-			element.setAttribute("class", "glyphicon glyphicon-pause");
+			// playButton.setAttribute("class", "glyphicon glyphicon-pause");
 		};
 
-	} else if (element.getAttribute("class") === "glyphicon glyphicon-pause") {
+	} else if (playButton.getAttribute("class") === "glyphicon glyphicon-pause") {
 		audioPlayer.pause();
-		element.setAttribute("class", "glyphicon glyphicon-play");
+		playButton.setAttribute("class", "glyphicon glyphicon-play");
 	}
 }
 
