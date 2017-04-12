@@ -1,5 +1,4 @@
-
-var currentAudio = new Audio();
+var time = 0;
 
 var audioPlayer = document.getElementById('musicPlayer');
 
@@ -34,27 +33,35 @@ function playSong(songTitle){
 	
 	//song object
 	var audioSource = "assets/music/" + songTitle + ".m4a";
-	// var currentSong = document.getElementsByClassName('placementText')[0];
 
-	//HTML element object
-	// var element = document.querySelector("[aria-label="+ songTitle + "]");
-	//get value of class attribute
+	audioPlayer.setAttribute('src', audioSource);
+	audioPlayer.load();
 
-	if (playButton.getAttribute("class") === "glyphicon glyphicon-play") {
-		audioPlayer.setAttribute('src', audioSource);
-		audioPlayer.load();
+	audioPlayer.onloadedmetadata = function() {
+		audioPlayer.play();
+	};
+	playButton.setAttribute("class", "pause glyphicon glyphicon-pause");
+}
 
-		currentSong.innerHTML = songTitle;
+function pause(){
 
-		audioPlayer.onloadedmetadata = function() {
-			audioPlayer.play();
-			// playButton.setAttribute("class", "glyphicon glyphicon-pause");
-		};
-
-	} else if (playButton.getAttribute("class") === "glyphicon glyphicon-pause") {
-		audioPlayer.pause();
-		playButton.setAttribute("class", "glyphicon glyphicon-play");
+	var playButton = document.getElementById('playButton');
+	if(playButton.getAttribute("class") === "play glyphicon glyphicon-play"){
+		audioPlayer.play(time);
+		playButton.setAttribute("class", "pause glyphicon glyphicon-pause");
 	}
+	else{
+		playButton.setAttribute("class", "play glyphicon glyphicon-play");
+		audioPlayer.pause();
+		time = audioPlayer.currentTime;
+
+	}
+}
+
+function stepBack(){
+	audioPlayer.pause();
+	audioPlayer.currentTime() = 0;
+	document.getElementsByClassName('songProgress')[0].setAttribute("value", 0);
 }
 
 

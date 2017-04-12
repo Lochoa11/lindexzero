@@ -50,36 +50,34 @@
 			  <button type="button" class="btn btn-default play-button" id="song-box-player" onclick="playSong('thisTime')">
 				  <p>This Time</p>
 			  </button>
+		  	</div>
 			  <!-- <button type="button" class="btn btn-default play-button" id="song-box-player" onclick="playSong('thisTime')"><i class="glyphicon glyphicon-play" aria-label="thisTime"></i></button>
 			</div> -->
 			<!-- song 2 -->
 			<div class="btn-group" class="button-block" role="group" id="song-box-wrapper" aria-label="...">
-			  <button type="button" class="btn btn-default" id="song-box-header">
+			  <button type="button" class="btn btn-default play-button" id="song-box-player" onclick="playSong('wickawom')">
 				  <p>Wickawom</p>
 			  </button>
-			  <button type="button" class="btn btn-default  play-button" id="song-box-player" onclick="playSong('wickawom')"><i class="glyphicon glyphicon-play" aria-label="wickawom"></i></button>
+			  <!-- <button type="button" class="btn btn-default  play-button" id="song-box-player" onclick="playSong('wickawom')"><i class="glyphicon glyphicon-play" aria-label="wickawom"></i></button> -->
 			</div>
-
 
 			<div class="navbar navbar-fixed-bottom">
 				<div class="myPlayer">
-          <audio id="musicPlayer"></audio>
-          <progress class="songProgress" value="0" max="1">
+	      			<audio id="musicPlayer"></audio>
+	      			<progress class="songProgress" value="0" max="1">
 					</progress>
 					<div class="songInformation">
 						<a class="placementText">Select a song from above</a>
 					</div>
 					<div class=" myButtons col-xs-6">
-						<button type="button" class="btn "><i class="stepBack glyphicon glyphicon-step-backward"></i></button>
-						<button type="button" class="btn " id="playButton"><i class="play glyphicon glyphicon-play"></i></button>
-					</div>
-					<div class="col-xs-6">
-
+						<button type="button" class="btn" onclick="stepBack()"><i class="stepBack glyphicon glyphicon-step-backward"></i></button>
+						<button type="button" class="btn" onclick="pause()"><i class="play glyphicon glyphicon-play" id="playButton"></i></button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
